@@ -1,23 +1,9 @@
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-$('.mobile-menu-button').click(function() {
-  $('.mobile-menu-button').toggleClass("nav-open");
-  $('.mobile-nav').slideToggle(200, function() {
-    // Animation complete.
-  });
+$( document ).ready(function() {
+   $(".hamburger-button").click(function(){
+     $(".hamburger-button").toggleClass("active");
+     $(".hamburger-menu").slideToggle();
+   });
 });
-</script>
-
-<script>
-
-// Can also be used with $(document).ready()
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
-});
-
-
 </script>

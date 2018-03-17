@@ -26,7 +26,7 @@
   </head>
   <body>
 
-      <header class="grid-spaceBetween-middle">
+      <header class="grid-spaceBetween-middle mainNav">
   <nav>
     <a href="/">Polygraph Services Logo</a>
   </nav>
@@ -37,6 +37,26 @@
       <a href="/contact"> Contact </a>
       <a href="/faq"> Frequently Asked Questions </a>
    </nav>
+</header>
+<header class="hamburger">
+  <nav class="hamburger">
+	<div class="hamburger-button">
+			<span class="hamburger-top"></span>
+			<span class="hamburger-middle"></span>
+			<span class="hamburger-bottom"></span>
+	</div>
+  <div class="hamburger-menu">
+    <ul>
+    <li><a href="/index">Home</a></li>
+    <li><a href="/about">About Mike</a></li>
+    <li><a href="/services">Services</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/faq">Frequently Asked Questions</a></li>
+    <!-- <li><a href="/shop.html">Shop The Prints</a></li> -->
+      <hr />
+  </ul>
+</div>
+</nav>
 </header>
 
 
@@ -60,18 +80,18 @@
 
 
       <footer class="grid-middle">
-  <div class="col-3">
+  <div class="col-3_xs-6">
     <p>LOGO</p>
   </div>
-  <div class="col-3">
+  <div class="col-3_xs-6">
     <h4>VPI</h4>
     <p class="footerP">VPI offers polygraph services to the public as well as to law enforcement agencies. VPI also offers private Investigative Services to the public.</p>
   </div>
-  <div class="col-3">
+  <div class="col-3_xs-6">
     <h4>Polygraph:</h4>
     <p class="footerP">An instrument for receiving and recording simultaneously tracings of variations in certain body activities.</p>
   </div>
-  <div class="col-3">
+  <div class="col-3_xs-6">
     <ul>
       <li><a href="/about">About Mike</a></li>
       <li><a href="/learn">Learn More</a></li>
@@ -81,28 +101,14 @@
   </div>
 </footer>
 
-      
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-$('.mobile-menu-button').click(function() {
-  $('.mobile-menu-button').toggleClass("nav-open");
-  $('.mobile-nav').slideToggle(200, function() {
-    // Animation complete.
-  });
+$( document ).ready(function() {
+   $(".hamburger-button").click(function(){
+     $(".hamburger-button").toggleClass("active");
+     $(".hamburger-menu").slideToggle();
+   });
 });
-</script>
-
-<script>
-
-// Can also be used with $(document).ready()
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
-});
-
-
 </script>
 
 

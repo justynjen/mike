@@ -96,6 +96,10 @@ nav a{
 .about{
   min-height: 70vh;
 }
+.aboutP{
+  border-left: 1.5px solid #02537d;
+  padding: 12px;
+}
 .services{
   min-height: 30vh;
   padding:5%;
@@ -175,4 +179,89 @@ footer{
 }
 .footerP{
   font-size: 13px;
+  padding: 12px;
+}
+/*
+hamburger menu
+*/
+.hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+		background-color:rgb(240, 232, 220);
+    padding:3% 3% 10% 3%;
+		width: 465px;
+		text-align:center;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 99999999;
+}
+.hamburger-menu a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 300;
+	color:black;
+	font-family: 'Lato', sans-serif;
+  display:block;
+  padding:8px 15px;
+  white-space:nowrap;
+}
+.hamburger-menu a:hover{
+	color:black;
+}
+a.smallMenu {
+	font-size: 25px;
+	font-weight: lighter;
+}
+.hamburger-menu li{list-style:none}
+.hamburger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9999999999;
+  padding: 12px;
+}
+.hamburger-button span{
+  width: 50px;
+  border: 2px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.hamburger-top, .hamburger-bottom{
+  position: absolute;
+}
+.hamburger-top{
+  top: 02px;
+}
+.hamburger-bottom{
+  bottom: 02.5px;
+}
+.active .hamburger-top{
+   transform: rotateZ(45deg);
+  top:12px;
+  border-color:black;
+}
+.active .hamburger-bottom{
+   transform: rotateZ(-45deg);
+  bottom:12px;
+  border-color:black;
+}
+.active .hamburger-middle{
+  opacity:0;
+}
+/*
+  *** MEDIA QUERIES ***
+*/
+@media all and (min-width:640px){
+  .hamburger{
+    display:none;
+  }
+}
+@media all and (max-width:640px){
+  .mainNav{
+    display: none;
+  }
 }

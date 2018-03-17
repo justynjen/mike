@@ -26,7 +26,7 @@
   </head>
   <body>
 
-      <header class="grid-spaceBetween-middle">
+      <header class="grid-spaceBetween-middle mainNav">
   <nav>
     <a href="/">Polygraph Services Logo</a>
   </nav>
@@ -38,33 +38,64 @@
       <a href="/faq"> Frequently Asked Questions </a>
    </nav>
 </header>
+<header class="hamburger">
+  <nav class="hamburger">
+	<div class="hamburger-button">
+			<span class="hamburger-top"></span>
+			<span class="hamburger-middle"></span>
+			<span class="hamburger-bottom"></span>
+	</div>
+  <div class="hamburger-menu">
+    <ul>
+    <li><a href="/index">Home</a></li>
+    <li><a href="/about">About Mike</a></li>
+    <li><a href="/services">Services</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/faq">Frequently Asked Questions</a></li>
+    <!-- <li><a href="/shop.html">Shop The Prints</a></li> -->
+      <hr />
+  </ul>
+</div>
+</nav>
+</header>
 
 
-      <section>
-  <h2 class="title center">Mike Anserson's Polygraph Examinations</h2>
-  <div class="padding">
+      <section class="grid-middle">
+  <h2 class="title center col-12">Mike Anserson's Polygraph Examinations</h2>
+  <div class="padding col-6">
     <p>Polygraph examinations vary greatly based on each case. Mike uses the high quality LX4000 computer polygraph system. This systems records, stores and analyzes physiological changes during the polygraph examination. The LX4000 system combines conventional procedure with a sophisticated state of the art computer.</p>
     <p>Your examination will be audio and video recorded. Each examination is done by Mike Anderson and 100% confidential. </p>
+  </div>
+  <div class="col-12 padding">
+    <hr>
     <p>Fees for Polygraph services change are greatly as the cases do.</p>
-    <p>For more information, you can contact Mike Anderson and his team. <a href="/contact">Contact Us.</a>
-    </p>
+    <p>For more information, you can contact Mike Anderson and his team.</p>
+  </div>
+  <div class="form col-12 center">
+    <h3 class="padding">Contact Us.</h3>
+    <form method="POST" action="https://formspree.io/justyngourdin@gmail.com">
+      <input type="name" name="name" placeholder="Your name">
+      <input type="email" name="email" placeholder="Your email">
+      <textarea name="message" placeholder="Your message"></textarea>
+      <button type="submit">Send</button>
+    </form>
   </div>
 </section>
 
 
       <footer class="grid-middle">
-  <div class="col-3">
+  <div class="col-3_xs-6">
     <p>LOGO</p>
   </div>
-  <div class="col-3">
+  <div class="col-3_xs-6">
     <h4>VPI</h4>
     <p class="footerP">VPI offers polygraph services to the public as well as to law enforcement agencies. VPI also offers private Investigative Services to the public.</p>
   </div>
-  <div class="col-3">
+  <div class="col-3_xs-6">
     <h4>Polygraph:</h4>
     <p class="footerP">An instrument for receiving and recording simultaneously tracings of variations in certain body activities.</p>
   </div>
-  <div class="col-3">
+  <div class="col-3_xs-6">
     <ul>
       <li><a href="/about">About Mike</a></li>
       <li><a href="/learn">Learn More</a></li>
@@ -74,28 +105,14 @@
   </div>
 </footer>
 
-      
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-$('.mobile-menu-button').click(function() {
-  $('.mobile-menu-button').toggleClass("nav-open");
-  $('.mobile-nav').slideToggle(200, function() {
-    // Animation complete.
-  });
+$( document ).ready(function() {
+   $(".hamburger-button").click(function(){
+     $(".hamburger-button").toggleClass("active");
+     $(".hamburger-menu").slideToggle();
+   });
 });
-</script>
-
-<script>
-
-// Can also be used with $(document).ready()
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
-});
-
-
 </script>
 
 

@@ -26,7 +26,7 @@
   </head>
   <body>
 
-      <header class="grid-spaceBetween-middle">
+      <header class="grid-spaceBetween-middle mainNav">
   <nav>
     <a href="/">Polygraph Services Logo</a>
   </nav>
@@ -38,6 +38,26 @@
       <a href="/faq"> Frequently Asked Questions </a>
    </nav>
 </header>
+<header class="hamburger">
+  <nav class="hamburger">
+	<div class="hamburger-button">
+			<span class="hamburger-top"></span>
+			<span class="hamburger-middle"></span>
+			<span class="hamburger-bottom"></span>
+	</div>
+  <div class="hamburger-menu">
+    <ul>
+    <li><a href="/index">Home</a></li>
+    <li><a href="/about">About Mike</a></li>
+    <li><a href="/services">Services</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/faq">Frequently Asked Questions</a></li>
+    <!-- <li><a href="/shop.html">Shop The Prints</a></li> -->
+      <hr />
+  </ul>
+</div>
+</nav>
+</header>
 
 
       <section class="grid">
@@ -46,8 +66,9 @@
     <hr class="center">
   </div>
   <div class="col-12 padding polygraphs">
-    <h3 class="padding">Polygraphs</h3>
-    <p>A polygraph exam is also referred to as a "lie detector" test. They use special technology to measure and at the same time, record, physiological chages, while the subject is answered a series of questions. Polygraph examinations or lie detector tests have become a cultural icon, used in everything from routine security screenings to high-profile investigations. While most people believe they are reserved strictly for government organizations or TV prgarms, lie detectors are actually available to help anyone interested in uncovering the truth. There are proffessionals, like Mike Anderson available to provide Polygraph services for anyone.</p>
+    <h3>Polygraphs</h3>
+    <hr>
+    <p class="aboutP">A polygraph exam is also referred to as a "lie detector" test. They use special technology to measure and at the same time, record, physiological chages, while the subject is answered a series of questions. Polygraph examinations or lie detector tests have become a cultural icon, used in everything from routine security screenings to high-profile investigations. While most people believe they are reserved strictly for government organizations or TV prgarms, lie detectors are actually available to help anyone interested in uncovering the truth. There are proffessionals, like Mike Anderson available to provide Polygraph services for anyone.</p>
   </div>
 </section>
 <section class="grid">
@@ -57,24 +78,24 @@
   <div class="col-6 padding">
     <h3>About Mike</h3>
     <hr>
-    <p>Mike Anderson is a highly experienced polygraph examiner who retired from the FBI after almost 28 years of service. During his time in the FBI , Mr. Anderson served in Houston, Texas ( 1989-1991); San Juan, Puerto Rico (1991-1996); and Salt Lake City, Utah (1996-2016). During his tenure in Salt Lake City Mr. Anderson had oversight for all FBI operations which occurred in 17 of Utah's 29 counties. (2001-2006). Beginning in 2007 and continuing until his retirement Mr. Anderson served as the program manager for the FBI polygraph unit for the Salt Lake City Division where he was responsible for conducting all FBI polygraphs throughout the states of Utah and Idaho. He was also frequently called upon to conduct polygraph examinations from coast to coast, and from Alaska to Central America. Mr. Anderson is fluent in the Spanish language, and is also licensed as a Utah State Private Investigator.</p>
+    <p class="aboutP">Mike Anderson is a highly experienced polygraph examiner who retired from the FBI after almost 28 years of service. During his time in the FBI , Mr. Anderson served in Houston, Texas ( 1989-1991); San Juan, Puerto Rico (1991-1996); and Salt Lake City, Utah (1996-2016). During his tenure in Salt Lake City Mr. Anderson had oversight for all FBI operations which occurred in 17 of Utah's 29 counties. (2001-2006). Beginning in 2007 and continuing until his retirement Mr. Anderson served as the program manager for the FBI polygraph unit for the Salt Lake City Division where he was responsible for conducting all FBI polygraphs throughout the states of Utah and Idaho. He was also frequently called upon to conduct polygraph examinations from coast to coast, and from Alaska to Central America. Mr. Anderson is fluent in the Spanish language, and is also licensed as a Utah State Private Investigator.</p>
   </div>
 </section>
 
 
       <footer class="grid-middle">
-  <div class="col-3">
+  <div class="col-3_xs-6">
     <p>LOGO</p>
   </div>
-  <div class="col-3">
+  <div class="col-3_xs-6">
     <h4>VPI</h4>
     <p class="footerP">VPI offers polygraph services to the public as well as to law enforcement agencies. VPI also offers private Investigative Services to the public.</p>
   </div>
-  <div class="col-3">
+  <div class="col-3_xs-6">
     <h4>Polygraph:</h4>
     <p class="footerP">An instrument for receiving and recording simultaneously tracings of variations in certain body activities.</p>
   </div>
-  <div class="col-3">
+  <div class="col-3_xs-6">
     <ul>
       <li><a href="/about">About Mike</a></li>
       <li><a href="/learn">Learn More</a></li>
@@ -84,28 +105,14 @@
   </div>
 </footer>
 
-      
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-$('.mobile-menu-button').click(function() {
-  $('.mobile-menu-button').toggleClass("nav-open");
-  $('.mobile-nav').slideToggle(200, function() {
-    // Animation complete.
-  });
+$( document ).ready(function() {
+   $(".hamburger-button").click(function(){
+     $(".hamburger-button").toggleClass("active");
+     $(".hamburger-menu").slideToggle();
+   });
 });
-</script>
-
-<script>
-
-// Can also be used with $(document).ready()
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
-});
-
-
 </script>
 
 

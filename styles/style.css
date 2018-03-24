@@ -131,8 +131,7 @@ nav a{
   padding: 20px;
 }
 .imageSection{
-  min-height: 75vh;
-  padding: 25px;
+  min-height: 70vh;
 }
 .bg{
   transform: rotate(270deg);
@@ -140,7 +139,7 @@ nav a{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 89px;
+  padding:70px;
 }
 /*
   ***SERVICES PAGE***

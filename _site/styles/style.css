@@ -50,13 +50,25 @@ h4{
 h5{
   font-size: 1rem;
 }
+header{
+  /*padding: 1%;*/
+  border-bottom: 1px solid grey;
+}
+nav a{
+  padding: 0 5px 0 5px;
+  font-size: 15px;
+  font-family: 'Open Sans';
+}
+nav img{
+  max-height: 65px;
+}
 /*
   ***HELPERS***
 */
 .center{
   text-align: center;
 }
-.right{
+.rightText{
   text-align: right;
   position: absolute;
   right: 0;
@@ -97,7 +109,7 @@ nav a{
   min-height: 70vh;
 }
 .aboutP{
-  border-left: 1.5px solid #02537d;
+  /*border-left: 1.5px solid #02537d;*/
   padding: 12px;
 }
 .services{
@@ -113,6 +125,22 @@ nav a{
 */
 .polygraphs{
   background-color: #d4d4d4b5;
+}
+.aboutImage{
+  transform: rotate(180deg);
+  padding: 20px;
+}
+.imageSection{
+  min-height: 75vh;
+  padding: 25px;
+}
+.bg{
+  transform: rotate(270deg);
+  min-height:200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 89px;
 }
 /*
   ***SERVICES PAGE***

@@ -63,7 +63,7 @@ nav a{
   font-family: 'Open Sans';
 }
 nav img{
-  max-height: 65px;
+  max-height: 80px;
 }
 /*
   ***HELPERS***
@@ -137,9 +137,9 @@ nav a{
   transform: rotate(180deg);
   padding: 20px;
 }
-.imageSection{
+/*.imageSection{
   min-height: 70vh;
-}
+}*/
 .bg{
   transform: rotate(270deg);
   min-height:200px;
@@ -147,6 +147,22 @@ nav a{
   background-repeat: no-repeat;
   background-size: cover;
   padding:70px;
+}
+.bg2{
+  transform: rotate(180deg);
+  min-height:200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+}
+.bgA{
+  transform: rotate(270deg);
+  min-height:200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:102px;
 }
 /*
   ***SERVICES PAGE***
@@ -212,7 +228,7 @@ footer{
   padding: 2%;
 }
 .footerP{
-  font-size: 13px;
+  font-size: 18px;
   padding: 12px;
 }
 /*

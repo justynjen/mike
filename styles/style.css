@@ -83,6 +83,10 @@ nav img{
 .padding{
   padding: 3%;
 }
+.underline{
+  text-decoration: underline;
+  color:  #02537d;
+}
 /*
   *** HEADER STYLES ***
 */

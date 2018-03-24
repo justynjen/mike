@@ -231,6 +231,13 @@ footer{
   font-size: 18px;
   padding: 12px;
 }
+.sub-footer {
+  background-color: #35353f;
+  color: rgb(220,220,220);
+  padding: 0.5%;
+  text-align: center;
+  font-size: 0.8rem;
+}
 /*
 hamburger menu
 */

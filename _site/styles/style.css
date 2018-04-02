@@ -156,6 +156,9 @@ nav a{
   background-size: cover;
   padding: 100px;
 }
+.bgMobile{
+  transform: rotate(180deg);
+}
 .bgA{
   transform: rotate(270deg);
   min-height:200px;
@@ -247,12 +250,12 @@ hamburger menu
     top: 0;
     right: 0;
     bottom: 0;
-		background-color:rgb(240, 232, 220);
+		background-color:white;
     padding:3% 3% 10% 3%;
 		width: 465px;
 		text-align:center;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
-    z-index: 99999999;
+    z-index: 9999999;
 }
 .hamburger-menu a {
   text-decoration: none;
@@ -320,5 +323,18 @@ a.smallMenu {
 @media all and (max-width:640px){
   .mainNav{
     display: none;
+  }
+}
+@media all and (max-width:640px){
+  .aboutMobile{
+    padding: 2%;
+  }
+  .bg2{
+    display: none;
+  }
+}
+@media all and (max-width:640px){
+  .services{
+    padding: 2%;
   }
 }
